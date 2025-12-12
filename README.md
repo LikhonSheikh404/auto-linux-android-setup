@@ -284,6 +284,8 @@ curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-
 
 ### 📲 **Method 2: Termux** (Alternative)
 1. Install Termux from F-Droid: 🔗 https://f-droid.org/packages/com.termux/
+   - Official site: [https://termux.dev](https://termux.dev)
+   - GitHub: [https://github.com/termux](https://github.com/termux)
 2. Open Termux and run:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash
@@ -303,6 +305,67 @@ cd /sdcard
 chmod +x *.sh
 ./launch_linux_setup.sh
 ```
+
+</div>
+
+## 📦 **Termux Packages & Repositories**
+
+<div style="background: linear-gradient(135deg, #2c5530 0%, #1e3a1a 100%); padding: 20px; border-radius: 10px; color: white;">
+
+### 📱 **About Termux**
+
+**Termux** is a terminal emulator application for Android OS which can be extended by packages of ported common GNU/Linux utilities.<sup>[5](#footnote-5)</sup>
+
+### 🌐 **Official Resources**
+- **🏠 Home Page**: [https://termux.dev](https://termux.dev)
+- **💻 GitHub**: [https://github.com/termux](https://github.com/termux)
+- **📱 F-Droid**: [https://f-droid.org/packages/com.termux/](https://f-droid.org/packages/com.termux/)
+
+### 📂 **Package Repositories**
+
+| Repository | sources.list Entry | Description |
+|------------|-------------------|-------------|
+| **Main** | `deb https://packages.termux.dev/apt/termux-main/ stable main` | Primary packages repository |
+| **Root** | `deb https://packages.termux.dev/apt/termux-root/ root stable` | Root-only packages |
+| **X11** | `deb https://packages.termux.dev/apt/termux-x11/ x11 main` | X11/GUI packages |
+| **Android 5/6** | `deb https://packages.termux.dev/termux-main-21/ stable main` | Legacy Android support |
+
+### 🛠️ **Available Packages**
+
+Termux hosts ported GNU/Linux utilities including:
+- **Development Tools**: gcc, clang, python, nodejs, go, rust
+- **System Utilities**: vim, nano, git, curl, wget
+- **Network Tools**: openssh, nmap, netcat, tcpdump
+- **Database**: sqlite3, postgresql, redis
+- **Web Servers**: nginx, apache2
+- **Desktop Environments**: xfce4, lxqt, mate (via X11 repo)
+
+### 📋 **Package Management**
+
+```bash
+# Update package lists
+pkg update
+
+# Install packages
+pkg install <package-name>
+
+# Search packages
+pkg search <search-term>
+
+# List installed packages
+pkg list-installed
+
+# Upgrade all packages
+pkg upgrade
+```
+
+### 🎯 **Repository Configuration**
+
+The setup script automatically configures the appropriate repositories based on your Android version:
+
+- **Android 7+**: Uses main, root, and x11 repositories
+- **Android 5/6**: Uses legacy repositories for compatibility
+- **Root Access**: Enables root-specific packages
 
 </div>
 
@@ -348,7 +411,9 @@ nano ~/.android_linux_config/config.sh
 
 #### ❌ **Termux not found**
 - ✅ Install from F-Droid: 🔗 https://f-droid.org/packages/com.termux/
+- ✅ Official site: [https://termux.dev](https://termux.dev)
 - ⚠️ Avoid Google Play Store version (outdated)
+- 📚 Check official documentation: [https://github.com/termux/termux-app](https://github.com/termux/termux-app)
 
 #### 🚫 **Storage access denied**
 - ✅ Run: `termux-setup-storage`
@@ -637,6 +702,8 @@ git push origin feature/your-feature
 <sup><strong id="footnote-3">3:</strong></sup> The intelligent recommendation system analyzes device capabilities, storage space, and user preferences to suggest the optimal Linux environment setup.
 
 <sup><strong id="footnote-4">4:</strong></sup> Some Samsung devices may have limitations with the Android Terminal app due to manufacturer-specific modifications to the Android system.
+
+<sup><strong id="footnote-5">5:</strong></sup> Termux is a terminal emulator application for Android OS which can be extended by packages of ported common GNU/Linux utilities. Official documentation and packages are available at [https://termux.dev](https://termux.dev) and [https://github.com/termux](https://github.com/termux).
 
 ---
 
