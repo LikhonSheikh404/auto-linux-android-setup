@@ -887,43 +887,13 @@
 **/*.zip
 
 # ==============================================================================
-# ANDROID LINUX SETUP SPECIFIC
+# PROJECT SPECIFIC
 # ==============================================================================
 # Add your project-specific ignores here
 # workspace/
 # data/
 # uploads/
 # downloads/
-
-# Termux Generated Files
-/data/data/com.termux/files/usr/
-/data/data/com.termux/files/home/
-/data/data/com.termux/files/tmp/
-/data/data/com.termux/cache/
-
-# User Generated Directories
-~/.android_linux_backup/
-~/.android_linux_config/
-~/start_linux.sh
-~/start_vnc.sh
-
-# Setup Logs
-android_linux_setup.log
-setup_error.log
-*.trace
-
-# Auto-generated scripts
-boot.sh
-auto_start_linux.sh
-
-# Backup Files
-*.backup
-*~
-
-# Android Linux Setup Specific
-android_linux_setup/
-setup_logs/
-user_configs/
 
 # Claude Agent SDK debug files
 **/.claude/debug/
