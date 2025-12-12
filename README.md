@@ -104,6 +104,77 @@ chmod +x test_setup.sh
 ./test_setup.sh
 ```
 
+### ⚡ **Single-Line Install Commands** (Quick Setup)
+
+<div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 4px solid #2196f3;">
+
+**🚀 Universal One-Liner (Recommended)**:
+```bash
+curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash
+```
+
+**🐧 With GUI Support**:
+```bash
+curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash -s -- --gui
+```
+
+**🎮 Interactive Launcher**:
+```bash
+wget -qO- https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/launch_linux_setup.sh | bash
+```
+
+**🧪 Test Suite Only**:
+```bash
+curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/test_setup.sh | bash
+```
+
+**⚙️ Custom Distribution**:
+```bash
+curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash -s -- --distro ubuntu --gui
+```
+
+**💾 Alternative with wget**:
+```bash
+wget -qO- https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash
+```
+
+</div>
+
+</div>
+
+## 📋 **Markdown Compatibility & Features**
+
+<div style="background: #f0f8ff; padding: 15px; border-radius: 8px; border-left: 4px solid #4169e1;">
+
+### ✅ **Supported Extended Markdown Features**
+
+This README uses **GitHub Flavored Markdown (GFM)** with extended syntax features that are fully supported on GitHub:
+
+| Feature | Support | Implementation |
+|---------|---------|----------------|
+| **Tables** | ✅ Full Support | Professional data presentation |
+| **Footnotes** | ✅ Full Support | Detailed explanations with links |
+| **Syntax Highlighting** | ✅ Full Support | Code blocks with language specification |
+| **Embedded HTML** | ✅ Full Support | Styled divs, gradients, responsive layouts |
+| **Task Lists** | ✅ Full Support | Checkbox lists for todo items |
+| **Emoji Support** | ✅ Full Support | Rich emoji integration |
+| **Strikethrough** | ✅ Full Support | ~~crossed out text~~ |
+| **Auto-linking** | ✅ Full Support | Automatic URL detection |
+
+**📚 Reference**: [Markdown Guide Extended Syntax](https://www.markdownguide.org/extended-syntax/) - Comprehensive guide to extended Markdown features.
+
+### 🎯 **Platform Compatibility**
+
+| Platform | Tables | Footnotes | HTML | Syntax Highlighting |
+|----------|--------|-----------|------|-------------------|
+| **GitHub** | ✅ | ✅ | ✅ | ✅ |
+| **GitLab** | ✅ | ✅ | ✅ | ✅ |
+| **Bitbucket** | ✅ | ❌ | ✅ | ✅ |
+| **VS Code** | ✅ | ✅ | ✅ | ✅ |
+| **Markdown Here** | ✅ | ✅ | ✅ | ✅ |
+
+*This documentation is optimized for GitHub and other platforms that support GitHub Flavored Markdown (GFM).*
+
 </div>
 
 ## ✨ **Features**
@@ -195,13 +266,27 @@ bash auto_linux_android_setup.sh --health
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
 
-### 📲 **Method 1: Termux** (Recommended)
+### ⚡ **Method 1: One-Line Install** (Fastest & Recommended)
+
+**🚀 Universal Command**:
+```bash
+curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash
+```
+
+**🎯 With Options**:
+```bash
+# With GUI support
+curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash -s -- --gui
+
+# Custom distribution
+curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash -s -- --distro ubuntu
+```
+
+### 📲 **Method 2: Termux** (Alternative)
 1. Install Termux from F-Droid: 🔗 https://f-droid.org/packages/com.termux/
 2. Open Termux and run:
 ```bash
-wget https://raw.githubusercontent.com/your-repo/android_linux_setup.sh
-chmod +x android_linux_setup.sh
-./android_linux_setup.sh
+curl -fsSL https://raw.githubusercontent.com/LikhonSheikh404/auto-linux-android-setup/main/auto_linux_android_setup.sh | bash
 ```
 
 ### 💾 **Method 2: Direct Download**
